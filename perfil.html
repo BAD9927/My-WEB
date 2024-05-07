@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="perfil">Mi Perfil</h1>
+        <nav class="barra-principal">
+            <ul>
+                <li><a href="#biografia">Biografía</a></li>
+                <li><a href="#intereses">Intereses</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#formulario">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="biografia">
+            <h2>Biografía</h2>
+            <p>¡Hola! Soy Breiner Abello, tengo 26 años.
+            Me considero un apasionado de la tecnología 
+            y soy estudiante de Ingeniería de Sistemas en
+            la Corporación Unificada Nacional (CUN). Vivo
+            en la hermosa ciudad de Santa Marta, Colombia.
+            ¡Bienvenido a mi perfil!</p>
+        </section>
+        <section id="intereses">
+            <h2>Intereses</h2>
+            <ul>
+                <li>Leer 📖</li>
+                <li>Deportes ⛹️ </li>
+                <li>Fotografía 📷</li>
+            </ul>
+        </section>
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Creativo 😁</li>
+                <li>Análitico 🤓</li>
+                <li>Práctico 😉</li>
+            </ul>
+        </section>
+    </main>
+    <section id="formulario"> 
+        <h2>EDITAR INFORMACION PERSONAL </h2>
+        <form action="visor.php" method="POST">
+            <fieldset>
+                <legend>Información del Usuario</legend>
+                <label for="nombre">Nombre completo:</label>
+                <input class="iform" type="text" name="nombre" id="nombre" required>
+                <br>
+                <label for="telefono">Teléfono:</label>
+                <input class="iform" type="text" name="telefono" id="telefono" required>
+                <br>
+                <label for="email">Email:</label>
+                <input class="iform" type="email" name="email" id="email" required>
+                <br> 
+                <label for="ciudad">Ciudad:</label>
+                <input class="iform" type="text" name="ciudad" id="ciudad" required>
+                <br>
+                <label for="fecha">Fecha de Nacimiento:</label>
+                <input class="iform" type="date" name="fecha" id="fecha" required min="1900-01-01" max="2024-05-07">
+            </fieldset>
+            <br>
+            <input class="btn" type="submit" value="Enviar">
+        </form>
+    </section>
+</body>
+</html>
